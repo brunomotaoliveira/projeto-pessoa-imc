@@ -5,17 +5,8 @@ class Pessoa {
   late double peso;
 
   //calcular imc
-  double imc() {
-    double imc = peso / (altura * altura);
-    return imc;
-  }
+  double imc() => peso / (altura * altura); // " => " - Arrow Function: executa o metodo e retorna o valor que ele der.
 
   //se é maior de idade
-  bool maiorDeIdade() {
-    if (idade >= 18) {
-      return true;
-    } else {
-      return false;
-    }
-  }
+  bool maiorDeIdade() => idade >= 18;
 }
